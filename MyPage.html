@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Обо мне</title>
+  <link rel="stylesheet" href="style.css">
+  
+  
+  
+ 
+ </head>
+ <body > 
+ <div id="Main-id" class="MainContainerFOrME">
+ <div id="SecondMain-id" class="SecondMainContainer">
+ <div id="MenuContainer-id" class="MenuContainer">
+<h1 > Мое портфолио </h1> 
+<div id="Menu-id" class="Menu">
+<a href="index.html">Главная</a>
+<a href="MyPage.html">Обо мне</a>
+<a href="Contact.html"> Связаться</a>
+</div>
+ </div>
+ <div  id="AlbumContainer-id" class="AlbumContainer" > 
+  <div style="width: 100%; height:1px; clear:both;"></div>
+  
+  <div class="forMeImg"> <a rel="simplebox" href="img/MeFoto.jpg"> <img src="img/MeFoto.jpg" width="302" height="302"  alt="Иванов Иван Иваныч"></a></div> 
+  
+  <div class="TextMeBox">
+   <table class="JustifyText" >
+  
+  <tr>
+  <td>ФИО: </td>
+  <td>Иванов Иван Иваныч</td> 
+  </tr>
+  <tr>
+  <td>Мое хобби: </td>
+  <td >Я люблю кататься на сноуборде, велосипеде. Играть футбол, волейбол, баскетбол</td> 
+  </tr>
+  <tr>
+  <td>Мой город: </td>
+  <td>г.Томск </td> 
+  </tr>
+  <tr>
+  <td>Интересные страницы: </td>
+  <td><a href="https://habrahabr.ru/">Habrahabr.ru</a>, <a href="https://bash.im">Bash.im</a></td>
+  </tr>
+  </table>
+  </div> 
+	  <div style="width: 100%; height:1px; clear:both;"></div> 
+ </div>
+ </div>
+ </div>
+
+ <script type="text/javascript" src="js/simplebox_util.js"></script>
+	<script type="text/javascript">
+	(function(){
+	var boxes=[],els,i,l;
+	if(document.querySelectorAll){
+	els=document.querySelectorAll('a[rel=simplebox]');	
+	Box.getStyles('js/simplebox_css','js/simplebox.css');
+	Box.getScripts('js/simplebox_js','js/simplebox.js',function(){
+	simplebox.init();
+	for(i=0,l=els.length;i<l;++i)
+	simplebox.start(els[i]);
+	simplebox.start('a[rel=simplebox_group]');			
+	});
+	}
+	})();
+	</script>
+ 
+ 
+ </body>
+</html>
+
+
+
+
